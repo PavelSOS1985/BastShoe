@@ -5,8 +5,6 @@ public class Level1 {
     public static List<String> mainStrMod = new ArrayList<>();
     public static int indexMod = 1;
     public static int countUndo = 0;
-    public static int countRedo = 0;
-
 
     public static String BastShoe(String command) {
         String[] resArr = command.split(" ", 2);
@@ -46,7 +44,6 @@ public class Level1 {
                 }
 
             case 4:
-                //System.out.println("size = " + mainStrMod.size() + "countUndo = " +countUndo);
                 indexMod++;
                 try {
                     mainStr = mainStrMod.get(mainStrMod.size() - indexMod);
@@ -63,101 +60,4 @@ public class Level1 {
         }
         return mainStr;
     }
-
-    public static void main(String[] args) {
-        BastShoe("1 Привет");
-        System.out.println("1 Привет " + mainStr);
-
-        BastShoe("1 , мир!");
-        System.out.println("1 , мир! " + mainStr);
-
-        BastShoe("1 ++");
-        System.out.println("1 ++ " + mainStr);
-
-        BastShoe("2 2");
-        System.out.println("2 2 " + mainStr);
-        BastShoe("3 6");
-        System.out.println("3 6 " + mainStr);
-        BastShoe("4");
-        System.out.println("4 " + mainStr);
-
-  /*      BastShoe("4");
-        System.out.println("4 " + mainStr);
-
-        BastShoe("4");
-        System.out.println("4 " + mainStr);
-
-        BastShoe("1 *");
-        System.out.println("1 *" + mainStr);
-
-        BastShoe("4");
-        System.out.println("4 " + mainStr);
-
-        BastShoe("4");
-        System.out.println("4 " + mainStr);
-
-        BastShoe("4");
-        System.out.println("4 " + mainStr);
-
-        BastShoe("3 6");
-        System.out.println("3 6 " + mainStr);
-
-        BastShoe("2 100");
-        System.out.println("2 100 " + mainStr);
-
-        BastShoe("1 Привет");
-        System.out.println("1 Привет " + mainStr);
-
-        BastShoe("1 , мир!");
-        System.out.println("1 , мир! " + mainStr);
-
-        BastShoe("1 ++");
-        System.out.println("1 ++ " + mainStr);
-
-        BastShoe("4");
-        System.out.println("4 " + mainStr);
-
-        BastShoe("4 ");
-        System.out.println("4 " + mainStr);
-
-        BastShoe("5");
-        System.out.println("5 " + mainStr);
-
-        BastShoe("4");
-        System.out.println("4 " + mainStr);
-
-        BastShoe("5");
-        System.out.println("5 " + mainStr);
-
-        BastShoe("5");
-        System.out.println("5 " + mainStr);
-
-        BastShoe("5");
-        System.out.println("5 " + mainStr);
-
-        BastShoe("5");
-        System.out.println("5 " + mainStr);
-
-        BastShoe("4");
-        System.out.println("4 " + mainStr);
-
-        BastShoe("4");
-        System.out.println("4 " + mainStr);
-
-        BastShoe("2 2");
-        System.out.println("2 2 " + mainStr);
-
-        BastShoe("4");
-        System.out.println("4 " + mainStr);
-
-        BastShoe("5");
-        System.out.println("5 " + mainStr);
-
-        BastShoe("5");
-        System.out.println("5 " + mainStr);
-
-        BastShoe("5");
-        System.out.println("5 " + mainStr);*/
-    }
-
 }
