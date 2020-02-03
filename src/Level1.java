@@ -57,6 +57,8 @@ public class Level1 {
                 if (indexMod < 1) indexMod = 1;
                 mainStr = mainStrMod.get(mainStrMod.size() - indexMod);
                 break;
+            default:
+                return mainStr;
         }
         return mainStr;
     }
