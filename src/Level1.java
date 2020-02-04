@@ -35,11 +35,10 @@ public class Level1 {
                 break;
             case 3:
                 try {
-                    mainStr = Character.toString(mainStr.charAt(Integer.parseInt(resArr[1])));
+                    return Character.toString(mainStr.charAt(Integer.parseInt(resArr[1])));
                 } catch (Exception e) {
-                    mainStr = "";
+                    return "";
                 }
-                break;
             case 4:
                 indexMod--;
                 if (indexMod < 0) {
